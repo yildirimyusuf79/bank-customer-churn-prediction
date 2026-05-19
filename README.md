@@ -121,5 +121,5 @@ Bu proje eğitim ve portfolyo amaçlı paylaşılmıştır.
 ## 📞 İletişim & Bağlantılar
 
 - Repository: [github.com/yildirimyusuf79/malatya-su-talebi-projesi](https://github.com/yildirimyusuf79/malatya-su-talebi-projesi)
-- LinkedIn: [linkedin.com/in/yusuf-yıldırım](https://www.linkedin.com/in/yusuf-y%C4%B1ld%C4%B1r%C4%B1m)
+- LinkedIn: [www.linkedin.com/in/yusuf-yıldırım-190445295](https://www.linkedin.com/in/yusuf-y%C4%B1ld%C4%B1r%C4%B1m-190445295)
 - Geliştirici: Yusuf Yıldırım
