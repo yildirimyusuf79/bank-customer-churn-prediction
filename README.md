@@ -1,66 +1,67 @@
 # Bank Customer Churn Prediction
 
-Musteri kaybini (churn) onceden tahmin ederek bankalarin riskli musterileri belirlemesini hedefleyen veri bilimi projesi.
-Calisma, kesifsel veri analizi (EDA), ozellik hazirlama ve siniflandirma modellerinin karsilastirilmasi adimlarini notebook tabanli bir akisla sunar.
+Müşteri kaybını (churn) önceden tahmin ederek bankaların riskli müşterileri belirlemesini hedefleyen veri bilimi projesi.
+Çalışma, keşifsel veri analizi (EDA), özellik hazırlama ve sınıflandırma modellerinin karşılaştırılması adımlarını notebook tabanlı bir akışla sunar.
 
-## Icerik
+## İçerik
 
-- [Proje Ozeti](#proje-ozeti)
-- [Is Problemi](#is-problemi)
+- [Proje Özeti](#proje-özeti)
+- [İş Problemi](#iş-problemi)
 - [Veri Seti](#veri-seti)
-- [Proje Yapisi](#proje-yapisi)
-- [Yontem](#yontem)
-- [Kurulum ve Calistirma](#kurulum-ve-calistirma)
-- [Degerlendirme Metrikleri](#degerlendirme-metrikleri)
-- [Gelistirme Yol Haritasi](#gelistirme-yol-haritasi)
-- [Katki](#katki)
+- [Proje Yapısı](#proje-yapısı)
+- [Yöntem](#yöntem)
+- [Kurulum ve Çalıştırma](#kurulum-ve-çalıştırma)
+- [Değerlendirme Metrikleri](#değerlendirme-metrikleri)
+- [Geliştirme Yol Haritası](#geliştirme-yol-haritası)
+- [Katkı](#katkı)
 - [Lisans](#lisans)
+- [İletişim & Bağlantılar](#iletişim--bağlantılar)
 
-## Proje Ozeti
+## Proje Özeti
 
-Bu repository, banka musteri davranislarini kullanarak churn tahmini yapmayi amaclar.
-Amac sadece model kurmak degil, ayni zamanda churn kararini etkileyen degiskenleri analiz ederek is tarafina uygulanabilir icgoruler sunmaktir.
+Bu repository, banka müşteri davranışlarını kullanarak churn tahmini yapmayı amaçlar.
+Amaç sadece model kurmak değil, aynı zamanda churn kararını etkileyen değişkenleri analiz ederek iş tarafına uygulanabilir içgörüler sunmaktır.
 
-## Is Problemi
+## İş Problemi
 
-Musteri kaybi, finans sektorunde gelir ve sadakat acisindan kritik bir risktir.
-Bu projede su sorulara yanit aranir:
+Müşteri kaybı, finans sektöründe gelir ve sadakat açısından kritik bir risktir.
+Bu projede şu sorulara yanıt aranır:
 
-- Hangi musteri profilleri churn etme egilimindedir?
-- Churn olasiligini en iyi tahmin eden model hangisidir?
-- Metrik bazli olarak operasyonel kararlar nasil desteklenebilir?
+- Hangi müşteri profilleri churn etme eğilimindedir?
+- Churn olasılığını en iyi tahmin eden model hangisidir?
+- Metrik bazlı olarak operasyonel kararlar nasıl desteklenebilir?
 
 ## Veri Seti
 
 - Dosya: `Churn_Modelling.csv`
-- Hedef degisken: `Exited` (0 = musteri kaldi, 1 = musteri ayrildi)
-- Veri alani: demografik bilgiler, finansal durum, hesap davranislari, urun kullanim gostergeleri
+- Hedef değişken: `Exited` (0 = müşteri kaldı, 1 = müşteri ayrıldı)
+- Veri alanı: demografik bilgiler, finansal durum, hesap davranışları, ürün kullanım göstergeleri
 
-## Proje Yapisi
+## Proje Yapısı
 
-- `eda.ipynb`: Veri kesfi, dagilimlar, korelasyon incelemeleri, temel bulgular
-- `modeller.ipynb`: Model egitimi, karsilastirma ve metrik bazli performans analizi
-- `proje.ipynb`: Uctan uca deney akisi ve sonuclarin bir arada sunumu
-- `Churn_Modelling.csv`: Ham veri kaynagi
+- `eda.ipynb`: Veri keşfi, dağılımlar, korelasyon incelemeleri, temel bulgular
+- `modeller.ipynb`: Model eğitimi, karşılaştırma ve metrik bazlı performans analizi
+- `proje.ipynb`: Uçtan uca deney akışı ve sonuçların bir arada sunumu
+- `Churn_Modelling.csv`: Ham veri kaynağı
 
-## Yontem
+## Yöntem
 
-1. Veri kalite kontrolu ve ilk inceleme
-2. Gerekli on isleme adimlari (kodlama, olceklendirme, ozellik hazirlama)
-3. Siniflandirma modellerinin egitimi
-4. Performans karsilastirmasi ve yorumlama
-5. Is etkisi acisindan bulgularin degerlendirilmesi
+1. Veri kalite kontrolü ve ilk inceleme
+2. Gerekli ön işleme adımları (kodlama, ölçeklendirme, özellik hazırlama)
+3. Sınıflandırma modellerinin eğitimi
+4. Performans karşılaştırması ve yorumlama
+5. İş etkisi açısından bulguların değerlendirilmesi
 
-## Kurulum ve Calistirma
+## Kurulum ve Çalıştırma
 
-### 1. Projeyi klonlayin
+### 1. Projeyi klonlayın
 
 ```bash
 git clone https://github.com/yildirimyusuf79/bank-customer-churn-prediction.git
 cd bank-customer-churn-prediction
 ```
 
-### 2. Sanal ortam olusturun
+### 2. Sanal ortam oluşturun
 
 ```bash
 python -m venv .venv
@@ -70,27 +71,27 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-### 3. Bagimliliklari yukleyin
+### 3. Bağımlılıkları yükleyin
 
 ```bash
 pip install jupyter pandas numpy matplotlib seaborn scikit-learn
 ```
 
-### 4. Notebooklari calistirin
+### 4. Notebookları çalıştırın
 
 ```bash
 jupyter notebook
 ```
 
-Calisma sirasi onerisi:
+Çalışma sırası önerisi:
 
 1. `eda.ipynb`
 2. `modeller.ipynb`
 3. `proje.ipynb`
 
-## Degerlendirme Metrikleri
+## Değerlendirme Metrikleri
 
-Model performansi asagidaki metriklerle degerlendirilir:
+Model performansı aşağıdaki metriklerle değerlendirilir:
 
 - Accuracy
 - Precision
@@ -98,21 +99,27 @@ Model performansi asagidaki metriklerle degerlendirilir:
 - F1-Score
 - ROC-AUC
 
-Not: Churn problemi is hedefine gore Precision-Recall dengesi ile yorumlanmalidir.
+Not: Churn problemi iş hedefine göre Precision-Recall dengesi ile yorumlanmalıdır.
 
-## Gelistirme Yol Haritasi
+## Geliştirme Yol Haritası
 
 - Hiperparametre optimizasyonu (GridSearchCV / RandomizedSearchCV)
-- Sinif dengesizligi yontemleri (class weight, SMOTE)
-- Model aciklanabilirligi (SHAP, LIME)
-- Notebook akisinin moduler Python yapisina tasinmasi
-- Basit bir API veya dashboard ile modelin sunuma hazir hale getirilmesi
+- Sınıf dengesizliği yöntemleri (class weight, SMOTE)
+- Model açıklanabilirliği (SHAP, LIME)
+- Notebook akışının modüler Python yapısına taşınması
+- Basit bir API veya dashboard ile modelin sunuma hazır hale getirilmesi
 
-## Katki
+## Katkı
 
-Katki saglamak icin issue acabilir veya pull request gonderebilirsiniz.
+Katkı sağlamak için issue açabilir veya pull request gönderebilirsiniz.
 
 ## Lisans
 
-Bu proje egitim ve portfolyo amacli paylasilmistir.
-Uretim ortami kullanimlari icin ek dogrulama, test ve izleme katmanlari onerilir.
+Bu proje eğitim ve portfolyo amaçlı paylaşılmıştır.
+Üretim ortamı kullanımları için ek doğrulama, test ve izleme katmanları önerilir.
+
+## 📞 İletişim & Bağlantılar
+
+- Repository: github.com/yildirimyusuf79/malatya-su-talebi-projesi
+- LinkedIn: linkedin.com/in/yusuf-yıldırım
+- Geliştirici: Yusuf Yıldırım
